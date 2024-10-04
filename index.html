@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+				<link rel="stylesheet" href="styles.css">
+					    <!-- Add EmailJS SDK -->
+
+		  
+</head>
+<body>
+
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <a href="#home">Oz amzaleg</a>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="#intro">Intro</a></li>
+                <li><a href="#calendar">Calendar</a></li>
+                <li><a href="#footer">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Header Section -->
+    <section id="header-section">
+        <div class="intro">
+            <p>Web Developer | Designer | Programmer</p>
+        </div>
+    </section>
+
+
+
+    <!-- Body Section: Outlook Calendar -->
+		<section id="contact">
+   <div class="container">
+        <h1>Check Outlook Calendar Events</h1>
+        <div id="event-status"></div> <!-- Section to display event status -->
+        <button id="check-events">Check Events</button> <!-- Button to trigger event check -->
+    </div>
+		  </section>
+
+
+    <!-- Footer Section: Employee Slideshow -->
+    <footer id="footer">
+        <h2>Our Team</h2>
+        <div class="slideshow-container">
+
+            <div class="slide fade">
+                <img src="employee1.jpg" alt="Employee 1" style="width:100%">
+                <div class="text">Employee 1 - Position</div>
+            </div>
+
+            <div class="slide fade">
+                <img src="employee2.jpg" alt="Employee 2" style="width:100%">
+                <div class="text">Employee 2 - Position</div>
+            </div>
+
+            <div class="slide fade">
+                <img src="employee3.jpg" alt="Employee 3" style="width:100%">
+                <div class="text">Employee 3 - Position</div>
+            </div>
+
+        </div>
+    </footer>
+
+<!-- Contact Section -->
+
+    <div id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or inquiries, feel free to reach out via the form below or directly through email or phone.</p>
+
+        <div class="contact-info">
+            <p>Phone: <a href="tel:+0523579356">(052) 357-9356</a></p>
+        </div>
+
+        <!-- Contact Form -->
+        <form id="contactForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" placeholder="Your message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="sendMail.js"></script>
+<script src="showSlide.js"></script>
+
+  </body>
+</html>
